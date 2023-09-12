@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isaplpha - Shows 1 if the input is a
+ * _isalpha - Shows 1 if the input is a
  * letter Another cases, shows 0
  *
  * @c: The character to be checked
