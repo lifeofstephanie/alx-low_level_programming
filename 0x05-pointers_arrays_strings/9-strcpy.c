@@ -1,22 +1,25 @@
 #include "main.h"
+
 /**
- * *_strcpy - copy the string
+ * char *_strcpy - copy the string
  * @dest: first
  * @src: second
  * Return: answer
  */
 
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	char *start = dest;
+	int l = 0;
+	int x = 0;
 
-	while (*src != '\0')
+	while (*(src + 1) != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		l++;
 	}
-	*dest = '\0';
-	return (start);
+	for (; x < l; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[1] = '\0';
+	return (dest);
 }
-
