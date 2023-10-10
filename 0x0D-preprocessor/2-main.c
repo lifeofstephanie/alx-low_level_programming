@@ -4,8 +4,8 @@
  * main - print name of file
  * Return: int
  */
-int main(void)
+int main()
 {
-	printf("%s\n" __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
